@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_textView"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/screen_background_dark_transparent"
+    android:padding="4dp"
+    android:textColor="@android:color/white"
+    tools:showIn="@layout/activity_main" />
