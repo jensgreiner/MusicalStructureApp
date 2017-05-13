@@ -24,8 +24,11 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_action_settings" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/ic_action_settings"
+            tools:layout_editor_absoluteY="557dp" />
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -89,8 +92,27 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/play_progress_bar" />
+        layout="@layout/play_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/include2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <include layout="@layout/play_button_bar" />
+    <include
+        android:id="@+id/include2"
+        layout="@layout/play_button_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
