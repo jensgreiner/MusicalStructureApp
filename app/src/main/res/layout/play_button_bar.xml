@@ -19,6 +19,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="@android:color/holo_green_light"
+        android:contentDescription="@string/image_description_guitar_icon"
         app:srcCompat="@drawable/ic_action_guitar" />
 
     <ImageButton
@@ -26,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:contentDescription="@string/image_description_turn_left_icon"
         app:srcCompat="@drawable/ic_action_turn_left" />
 
     <ImageButton
@@ -33,6 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:contentDescription="@string/image_description_playback_icon"
         app:srcCompat="@drawable/ic_action_playback_play" />
 
     <ImageButton
@@ -40,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:contentDescription="@string/image_description_turn_right_icon"
         app:srcCompat="@drawable/ic_action_turn_right" />
 
     <ImageButton
@@ -47,5 +51,6 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
+        android:contentDescription="@string/image_description_menu_icon"
         app:srcCompat="@drawable/ic_menu" />
 </LinearLayout>

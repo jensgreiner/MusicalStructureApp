@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">MusicalStructureApp</string>
     <string name="main_description">TextView</string>
+    <string name="image_description_guitar_icon">guitar image</string>
+    <string name="image_description_turn_left_icon">turn left image</string>
+    <string name="image_description_playback_icon">playback icon</string>
+    <string name="image_description_turn_right_icon">turn right icon</string>
+    <string name="image_description_menu_icon">menu icon</string>
 </resources>
