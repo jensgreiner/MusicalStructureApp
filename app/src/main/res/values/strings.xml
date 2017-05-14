@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Musical Structure App</string>
-    <string name="main_description">TextView</string>
+    <string name="main_description">TextView to describe MainActivity</string>
+    <string name="settings_description">TextView to describe SettingsActivity</string>
+    <string name="downloads_description">TextView to describe DownloadsActivity</string>
+    <string name="discovery_description">TextView to describe DiscoveryActivity</string>
+    <string name="Playlists_description">TextView to describe PlaylistsActivity</string>
+    <string name="podcast_details_description">TextView to describe PodcastDetailsActivity</string>
+    <string name="play_description">TextView to describe PlayActivity</string>
     <string name="image_description_guitar_icon">guitar image</string>
     <string name="image_description_turn_left_icon">turn left image</string>
     <string name="image_description_playback_icon">playback icon</string>

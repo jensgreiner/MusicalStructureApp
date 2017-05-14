@@ -13,8 +13,8 @@
 
     tools:showIn="@layout/activity_main">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ImageButton
+        android:id="@+id/cover_image_button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/ic_action_guitar" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/backward_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/ic_action_turn_left" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/play_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/ic_action_playback_play" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/forward_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/ic_action_turn_right" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/play_activity_button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_weight="1"
