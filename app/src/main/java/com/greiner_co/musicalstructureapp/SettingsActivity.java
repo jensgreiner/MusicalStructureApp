@@ -11,7 +11,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        // SettingsActivity
+        // Set the description text for this activity
         TextView descriptionView = (TextView) findViewById(R.id.settings_description);
         String descriptionText = getResources().getString(R.string.settings_description);
         descriptionView.setText(descriptionText);
