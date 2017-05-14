@@ -24,4 +24,8 @@
     <string name="activity_title_label_playlists">Playlists</string>
     <string name="activity_title_label_podcast_details">Podcast Details</string>
     <string name="activity_title_label_playback">Playback</string>
+    <string name="add_playlist_message">Shows submenu to add playlists</string>
+    <string name="backward_message">30 seconds backward in playback</string>
+    <string name="forward_message">30 seconds forward in playback</string>
+    <string name="play_message">Play current podcast</string>
 </resources>

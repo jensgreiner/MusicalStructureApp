@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Find the view that shows settings activity
+        // Find the view that shows discovery activity
         ImageButton addPodcastButton = (ImageButton) findViewById(R.id.add_podcast_button);
 
         // Set a click listener on that view
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Find the view that shows settings activity
+        // Find the view that shows playlist activity
         Button playlistButton = (Button) findViewById(R.id.playlists_button);
 
         // Set a click listener on that view
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Find the view that shows settings activity
+        // Find the view that shows podcast details activity
         Button podcastDetailsButton = (Button) findViewById(R.id.podcasts_button);
 
         // Set a click listener on that view
@@ -90,8 +91,29 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        // Find the button which shows submenu to add playlists
+        ImageButton addPlaylistsButton = (ImageButton) findViewById(R.id.add_playlist_button);
 
+        // Set a click listener to show toast
+        addPlaylistsButton.setOnClickListener((view) -> Toast.makeText(this, R.string.add_playlist_message, Toast.LENGTH_SHORT).show());
 
+        // Find the button which goes back 30 seconds in playback
+        ImageButton backwardButton = (ImageButton) findViewById(R.id.backward_button);
+
+        // Set a click listener to show toast
+        backwardButton.setOnClickListener((view) -> Toast.makeText(this, R.string.backward_message, Toast.LENGTH_SHORT).show());
+
+        // Find the button which goes 30 seconds forward in playback
+        ImageButton forwardButton = (ImageButton) findViewById(R.id.forward_button);
+
+        // Set a click listener to show toast
+        forwardButton.setOnClickListener((view) -> Toast.makeText(this, R.string.forward_message, Toast.LENGTH_SHORT).show());
+
+        // Find the button which just plays the current podcast
+        ImageButton playButton = (ImageButton) findViewById(R.id.play_button);
+
+        // Set a click listener to show toast
+        playButton.setOnClickListener((view) -> Toast.makeText(this, R.string.play_message, Toast.LENGTH_SHORT).show());
 
     }
 }
