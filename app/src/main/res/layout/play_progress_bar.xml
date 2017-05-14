@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/progressBar"
     style="?android:attr/progressBarStyleHorizontal"
-    android:layout_width="0dp"
+    android:layout_width="@dimen/play_progress_bar_width"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="0dp"
+    android:layout_marginBottom="@dimen/play_progress_bar_margin_bottom"
     android:progress="40"
     tools:showIn="@layout/activity_main" />

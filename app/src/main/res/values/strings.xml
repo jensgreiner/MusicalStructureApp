@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Musical Structure App</string>
-    <string name="main_description">TextView to describe MainActivity</string>
-    <string name="settings_description">TextView to describe SettingsActivity</string>
-    <string name="downloads_description">TextView to describe DownloadsActivity</string>
-    <string name="discovery_description">TextView to describe DiscoveryActivity</string>
-    <string name="playlists_description">TextView to describe PlaylistsActivity</string>
-    <string name="podcast_details_description">TextView to describe PodcastDetailsActivity</string>
-    <string name="play_description">TextView to describe PlayActivity</string>
+    <string name="main_description">MainActivity is the central place of the app. Has a ToolBar with the top buttons, two ListViews/RecyclerViews (here presented as two large buttons) with playlists and already added podcasts and a ToolBar at the bottom which shows the current podcast and the play buttons. The add playlist button pops up a button menu to let the user create a new playlist.</string>
+    <string name="settings_description">SettingsActivity is the place for overall settings of the app. It looks like a usual settings activity with a list of settings and sub activities, switches, sliders etc.</string>
+    <string name="downloads_description">DownloadsActivity holds a ListView/RecyclerView with all currently running downloads. Downloads could be paused or stopped here.</string>
+    <string name="discovery_description">DiscoveryActivity is the place to search for podcasts and add new podcasts to the app. It has a search field, a GridView with the podcast cover images, a ToolBar with several categories and a button to add a podcast. As data source for this view podcast feeds (urls) are used.</string>
+    <string name="playlists_description">PlaylistsActivity gives an overview of the playlists a user has added or the smart playlists given by the app. It is a bunch of ListViews/RecyclerViews with buttons to maintain the playlists.</string>
+    <string name="podcast_details_description">PodcastDetailsActivity gives all the details to the chosen podcast. It lists (ListView/RecyclerView) all the episodes, departed into played/unplayed. For each episode there are the show notes. Also there is a settings subview specific for this podcast.</string>
+    <string name="play_description">PlayActivity shows information about the current playing podcast. It offers the description of the podcast, the show notes and chapter markers of the episode. It could also offer some more settings specific to this podcast, like play speed and the times for the forward and backward buttons in seconds. This view should slide from the bottom toolBar into a fullscreen activity. Also it should go back to activity where it was enlarged from. (Currently it always goes back to MainActivity)</string>
     <string name="image_description_guitar_icon">guitar image</string>
     <string name="image_description_turn_left_icon">turn left image</string>
     <string name="image_description_playback_icon">playback icon</string>
