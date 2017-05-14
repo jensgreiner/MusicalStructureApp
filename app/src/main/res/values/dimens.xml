@@ -6,4 +6,19 @@
     <dimen name="description_margin_left">16dp</dimen>
     <dimen name="description_width">0dp</dimen>
     <dimen name="description_padding">4dp</dimen>
+    <dimen name="progress_bar_width">0dp</dimen>
+    <dimen name="cover_image_single_width">0dp</dimen>
+    <dimen name="cover_image_single_height">0dp</dimen>
+    <dimen name="play_button_single_margin_bottom">8dp</dimen>
+    <dimen name="play_button_single_margin_top">8dp</dimen>
+    <dimen name="backward_button_single_margin_right">8dp</dimen>
+    <dimen name="backward_button_single_margin_top">8dp</dimen>
+    <dimen name="backward_button_single_margin_bottom">8dp</dimen>
+    <dimen name="backward_button_single_margin_left">16dp</dimen>
+    <dimen name="forward_button_single_margin_bottom">8dp</dimen>
+    <dimen name="forward_button_single_margin_top">8dp</dimen>
+    <dimen name="forward_button_single_margin_right">16dp</dimen>
+    <dimen name="play_activity_description_width">0dp</dimen>
+    <dimen name="playlist_play_progress_bar_width">0dp</dimen>
+    <dimen name="playlist_play_button_bar_width">0dp</dimen>
 </resources>

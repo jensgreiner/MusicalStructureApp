@@ -7,9 +7,88 @@
     tools:context="com.greiner_co.musicalstructureapp.PlayActivity">
 
     <include
+        android:id="@+id/play_progress_bar"
+        layout="@layout/play_progress_bar"
+        android:layout_width="@dimen/progress_bar_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cover_image_single"
+        android:layout_width="@dimen/cover_image_single_width"
+        android:layout_height="@dimen/cover_image_single_height"
+        android:background="@android:color/holo_green_light"
+        android:contentDescription="@string/image_description_guitar_icon"
+        android:scaleType="center"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play_progress_bar"
+        app:srcCompat="@drawable/ic_action_guitar" />
+
+    <ImageButton
+        android:id="@+id/play_button_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/play_button_single_margin_bottom"
+        android:layout_marginTop="@dimen/play_button_single_margin_top"
+        android:contentDescription="@string/image_description_playback_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover_image_single"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_action_playback_play" />
+
+    <ImageButton
+        android:id="@+id/backward_button_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/backward_button_single_margin_bottom"
+        android:layout_marginEnd="@dimen/backward_button_single_margin_right"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="@dimen/backward_button_single_margin_right"
+        android:layout_marginStart="@dimen/backward_button_single_margin_left"
+        android:layout_marginTop="@dimen/backward_button_single_margin_top"
+        android:contentDescription="@string/image_description_turn_left_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/play_button_single"
+        app:layout_constraintTop_toBottomOf="@+id/cover_image_single"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_action_turn_left" />
+
+    <ImageButton
+        android:id="@+id/forward_button_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/forward_button_single_margin_bottom"
+        android:layout_marginEnd="@dimen/backward_button_single_margin_right"
+        android:layout_marginLeft="@dimen/backward_button_single_margin_left"
+        android:layout_marginRight="@dimen/forward_button_single_margin_right"
+        android:layout_marginStart="@dimen/backward_button_single_margin_left"
+        android:layout_marginTop="@dimen/forward_button_single_margin_top"
+        android:contentDescription="@string/image_description_turn_right_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/play_button_single"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover_image_single"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_action_turn_right" />
+
+    <include
         android:id="@+id/play_activity_description"
         layout="@layout/description_text_view"
-        android:layout_width="@dimen/description_width"
+        android:layout_width="@dimen/play_activity_description_width"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/description_margin_bottom"
         android:layout_marginEnd="@dimen/description_margin_right"
@@ -18,8 +97,10 @@
         android:layout_marginStart="@dimen/description_margin_left"
         android:layout_marginTop="@dimen/description_margin_top"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>

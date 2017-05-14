@@ -7,6 +7,25 @@
     tools:context="com.greiner_co.musicalstructureapp.PlaylistActivity">
 
     <include
+        android:id="@+id/playlist_play_button_bar"
+        layout="@layout/play_button_bar"
+        android:layout_width="@dimen/playlist_play_button_bar_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <include
+        android:id="@+id/playlist_play_progress_bar"
+        layout="@layout/play_progress_bar"
+        android:layout_width="@dimen/playlist_play_progress_bar_width"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/playlist_play_button_bar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <include
         android:id="@+id/playlist_description"
         layout="@layout/description_text_view"
         android:layout_width="@dimen/description_width"
@@ -17,7 +36,8 @@
         android:layout_marginRight="@dimen/description_margin_right"
         android:layout_marginStart="@dimen/description_margin_left"
         android:layout_marginTop="@dimen/description_margin_top"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/playlist_play_progress_bar"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
