@@ -6,4 +6,10 @@
     <string name="image_description_playback_icon">playback icon</string>
     <string name="image_description_turn_right_icon">turn right icon</string>
     <string name="image_description_menu_icon">menu icon</string>
+    <string name="button_description_settings">settings button</string>
+    <string name="button_description_downloads">downloads button</string>
+    <string name="button_description_add_playlist">add playlist button</string>
+    <string name="button_description_add_podcast">add podcast button</string>
+    <string name="_button_title_playlists">Playlists</string>
+    <string name="button_title_podcast_details">Podcast Details</string>
 </resources>

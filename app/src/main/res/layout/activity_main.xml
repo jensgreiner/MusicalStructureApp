@@ -21,32 +21,42 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/settings_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="8dp"
             android:layout_weight="1"
+            android:contentDescription="@string/button_description_settings"
             app:layout_constraintRight_toRightOf="parent"
             app:srcCompat="@drawable/ic_action_settings"
             tools:layout_editor_absoluteY="557dp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/downloads_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/button_description_downloads"
             app:srcCompat="@drawable/ic_action_download" />
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/add_playlist_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/button_description_add_playlist"
+            app:srcCompat="@drawable/ic_action_list_2" />
+
+        <ImageButton
+            android:id="@+id/add_podcast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/button_description_add_podcast"
             app:srcCompat="@drawable/ic_action_add" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/Playlists"
+        android:id="@+id/playlists"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -54,14 +64,14 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:text="Playlists"
+        android:text="@string/_button_title_playlists"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/Podcasts"
+        android:id="@+id/podcasts"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -69,10 +79,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:text="Podcasts Details"
+        android:text="@string/button_title_podcast_details"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Playlists" />
+        app:layout_constraintTop_toBottomOf="@+id/playlists" />
 
     <include
         android:id="@+id/main_text_view"
@@ -80,24 +90,22 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:text="@string/main_description"
         app:layout_constraintBottom_toTopOf="@+id/include"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Podcasts"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/podcasts" />
 
     <include
         android:id="@+id/include"
         layout="@layout/play_progress_bar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
         app:layout_constraintBottom_toTopOf="@+id/include2"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -108,9 +116,6 @@
         layout="@layout/play_button_bar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
