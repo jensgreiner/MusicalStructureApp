@@ -18,12 +18,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".DownloadsActivity" />
-        <activity android:name=".DiscoveryActivity" />
-        <activity android:name=".PlaylistActivity" />
-        <activity android:name=".PodcastDetailsActivity" />
-        <activity android:name=".PlayActivity"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/activity_title_label_settings"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".DownloadsActivity"
+            android:label="@string/activity_title_label_downloads"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".DiscoveryActivity"
+            android:label="@string/activity_title_label_discovery"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".PlaylistActivity"
+            android:label="@string/activity_title_label_playlists"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".PodcastDetailsActivity"
+            android:label="@string/activity_title_label_podcast_details"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
+        <activity
+            android:name=".PlayActivity"
+            android:label="@string/activity_title_label_playback"
+            android:parentActivityName=".MainActivity"
+            tools:targetApi="jelly_bean" />
     </application>
 
 </manifest>

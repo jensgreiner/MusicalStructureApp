@@ -14,5 +14,6 @@ public class MainActivity extends AppCompatActivity {
         TextView description = (TextView) findViewById(R.id.main_text_view);
         String descriptionText = getResources().getString(R.string.main_description);
         description.setText(descriptionText);
+
     }
 }
